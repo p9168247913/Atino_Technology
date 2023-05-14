@@ -14,44 +14,33 @@ export class DashboardComponent {
   constructor(private router: Router, private apiService: ApiService, private http: HttpClient) { }
 
   ngOnInit() {
-    this.apiService.getContacts().subscribe((data: any)=>{
-     
-      console.log("contactData",data);
+    this.apiService.getContacts().subscribe((data: any) => {
+      console.log("contactData", data);
       this.users = data;
-    })    
+    })
   }
 
   addContact() {
     this.router.navigateByUrl('/addContact');
   }
 
-  userLogout(){
-
+  userLogout() {
     localStorage.removeItem("token")
-
-
     this.router.navigateByUrl('/Login');
   }
 
   onContactDelete(userId: string) {
-    // if (!userId) {
-    //   console.error('User ID is required');
-    //   return;
-    // }
     this.apiService.deleteContact(userId).subscribe(
-      (response:string) => {
-        
-
-        // remove the deleted user from the list
-        this.users = this.users.filter((user:any) => user._id !== userId);
+      (response: string) => {
+        this.users = this.users.filter((user: any) => user._id !== userId);
         console.log('Contact deleted');
       },
-      (error:any) => console.error('Error deleting user:', error)
+      (error: any) => console.error('Error deleting user:', error)
     );
   }
 
-  onEditContact(userId: string){
-    localStorage.setItem("contactId",userId)
+  onEditContact(userId: string) {
+    localStorage.setItem("contactId", userId)
     this.router.navigateByUrl('/editContact');
   }
 

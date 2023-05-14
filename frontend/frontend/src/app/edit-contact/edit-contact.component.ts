@@ -15,12 +15,9 @@ export class EditContactComponent {
 
   token = localStorage.getItem("token") || ''
 
-  constructor(private router: Router, private http: HttpClient, private formBuilder: FormBuilder) {
+  constructor(private router: Router, private http: HttpClient, private formBuilder: FormBuilder) { }
 
-  }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   register() {
     let bodyData =
@@ -35,7 +32,6 @@ export class EditContactComponent {
     const headers = new HttpHeaders({
       'Authorization': this.token
     }).set("Content-Type", 'application/json');
-
 
     this.http.post(`http://localhost:4500/contact/update/${id}`, bodyData, { headers }).subscribe((resultData: any) => {
       console.log("admin", resultData);

@@ -8,31 +8,26 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-token = localStorage.getItem("token") || ''
+  token = localStorage.getItem("token") || ''
 
-   apiUrl = `http://localhost:4500/contact`
-    // Replace this URL with your API endpoint
+  apiUrl = `http://localhost:4500/contact`
 
   constructor(private http: HttpClient, private router: Router) { }
 
-  // Method to get all posts from API
-  getContacts(){
+  getContacts() {
     const headers = new HttpHeaders({
       'Authorization': this.token
-    });
-
+    }).set('Cache-Control', 'no-cache');
     this.router.navigateByUrl('/dashboard');
-    return (this.http.get(this.apiUrl,{headers}));
+    return (this.http.get(this.apiUrl, { headers }));
   }
 
   deleteContact(userId: string) {
     const headers = new HttpHeaders({
       'Authorization': this.token
     });
-
-
     const url = `${this.apiUrl}/delete/${userId}`;
-    console.log("id",url)
-    return this.http.delete(url,{headers,responseType:"text"})
+    console.log("id", url)
+    return this.http.delete(url, { headers, responseType: "text" })
   }
 }

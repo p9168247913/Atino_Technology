@@ -7,20 +7,17 @@ import { CanActivate, Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent  {
+export class LoginComponent {
 
   email: string = '';
   password: string = '';
 
-  isLogin: boolean = true;
-  erroMessage: string = "";
+  constructor(private router: Router, private http: HttpClient) { }
 
-  constructor(private router: Router,private http: HttpClient) {}
-
-  returnAdmin(){
+  returnAdmin() {
     this.router.navigateByUrl('/adminLogin')
   }
-  returnHome(){
+  returnHome() {
     this.router.navigateByUrl('/')
   }
 
@@ -33,24 +30,20 @@ export class LoginComponent  {
       password: this.password,
     };
 
-        this.http.post("http://localhost:4500/user/login", bodyData).subscribe(  (resultData: any) => {
-        console.log(resultData);
+    this.http.post("http://localhost:4500/user/login", bodyData).subscribe((resultData: any) => {
+      console.log(resultData);
 
-        if (resultData.token) 
-        {
-          localStorage.setItem("objectId",JSON.stringify(resultData.userId))
-           localStorage.setItem('token', resultData.token);
-           this.router.navigateByUrl('/dashboard');
-    
-
-        } 
-        else
-         {
-          alert("Incorrect Email or Password");
-          // console.log("Errror login");
-          this.router.navigateByUrl('/Login');
-        }
-      });
-    }
+      if (resultData.token) {
+        localStorage.setItem("objectId", JSON.stringify(resultData.userId))
+        localStorage.setItem('token', resultData.token);
+        this.router.navigateByUrl('/dashboard');
+      }
+      else {
+        alert("Incorrect Email or Password");
+        // console.log("Errror login");
+        this.router.navigateByUrl('/Login');
+      }
+    });
+  }
 
 }

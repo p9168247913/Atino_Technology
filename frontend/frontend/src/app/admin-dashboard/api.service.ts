@@ -6,23 +6,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-   apiUrl = 'http://localhost:4500/user'; // Replace this URL with your API endpoint
-
-  //  token = localStorage.getItem("token")||""
+  apiUrl = 'http://localhost:4500/user';
 
   constructor(private http: HttpClient) { }
 
-  // Method to get all posts from API
-  getPosts(){
+  getPosts() {
     return this.http.get(this.apiUrl);
   }
 
- 
   deleteUser(userId: string) {
-    
     const url = `${this.apiUrl}/delete/${userId}`;
-
-    return this.http.delete(url, {responseType:"text"})
+    return this.http.delete(url, { responseType: "text" })
   }
 
 }

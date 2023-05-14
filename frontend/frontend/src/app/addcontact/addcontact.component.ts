@@ -15,14 +15,9 @@ export class AddcontactComponent {
 
   token=localStorage.getItem("token")||''
 
-  constructor(private router: Router,private http: HttpClient,private formBuilder: FormBuilder) 
-  {
-    
-  }
+  constructor(private router: Router,private http: HttpClient,private formBuilder: FormBuilder) { }
 
-  ngOnInit(): void
-  {
-  }
+  ngOnInit(): void{}
 
   addContact()
   {
@@ -31,25 +26,24 @@ export class AddcontactComponent {
       "name" : this.name,
       "email" : this.email,
       "number" : this.number,
-     
     };
 
     const headers = new HttpHeaders({
       'Authorization': this.token
-    }).set("Content-Type", 'application/json');
-
+    }).set("Content-Type", 'application/json')
+    
     this.http.post("http://localhost:4500/contact/add",bodyData, {headers}).subscribe((resultData: any)=>
     {
       alert("Contact Added Successfully")
-
-        console.log("contact",resultData);
-        this.router.navigateByUrl('/dashboard');
+      console.log("contact",resultData);
+      this.router.navigateByUrl('/dashboard');
     })
   }
 
   saveContact()
   {
     this.addContact();
+    location.reload()
   }
 }
 

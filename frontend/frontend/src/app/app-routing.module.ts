@@ -22,20 +22,18 @@ const routes: Routes = [
   },
   {
     path: 'adminDashboard',
-    component : AdminDashboardComponent
+    component: AdminDashboardComponent
   },
   {
     path: 'Login',
     component: LoginComponent
   },
-
   {
     path: 'dashboard',
     component: DashboardComponent,
     canActivate: [AuthGuard]
   },
   {
-
     path: 'register',
     component: RegisterComponent,
   },
@@ -52,7 +50,6 @@ const routes: Routes = [
     component: EditContactComponent,
   }
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,30 +1,27 @@
 <div class="container">
-
-    <div style="display: flex; justify-content: space-around;">
-      <h1>User Dashboard</h1>
-      <div>
-        <button (click)="addContact()">Add Contact</button>
-        <button (click)="userLogout()">Logout</button>
-      </div>
+  <div style="display: flex; justify-content: space-around;">
+    <h1>User Dashboard</h1>
+    <div>
+      <button (click)="addContact()">Add Contact</button>
+      <button (click)="userLogout()">Logout</button>
     </div>
-  
-  
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Phone Number</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let data of users">
-          <td>{{ data.name }}</td>
-          <td>{{ data.email }}</td>
-          <td>{{ data.number }}</td>
-          <button (click)="onContactDelete(data._id)">Delete</button>
-          <button (click)="onEditContact(data._id)">Update</button>
-        </tr>
-      </tbody>
-    </table>
   </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of users">
+        <td>{{ data.name }}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.number }}</td>
+        <button (click)="onContactDelete(data._id)">Delete</button>
+        <button (click)="onEditContact(data._id)">Update</button>
+      </tr>
+    </tbody>
+  </table>
+</div>

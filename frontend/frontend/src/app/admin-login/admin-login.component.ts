@@ -12,19 +12,15 @@ export class AdminLoginComponent {
   email: string = '';
   password: string = '';
 
-  
-
   constructor(private router: Router, private http: HttpClient) {
     this.email = "";
     this.password = "";
   }
 
   login() {
-    
     if (this.email === "admin@gmail.com" && this.password === "admin") {
       this.router.navigateByUrl('/adminDashboard');
       this.adminlogin = true
-
     } else if (this.email === "admin@gmail.com" && this.password !== "admin") {
       alert("Incorrect Password")
     } else if (this.email !== "admin@gmail.com" && this.password === "admin") {
