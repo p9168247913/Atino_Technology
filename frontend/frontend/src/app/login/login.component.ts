@@ -34,13 +34,13 @@ export class LoginComponent {
       console.log(resultData);
 
       if (resultData.token) {
-        localStorage.setItem("objectId", JSON.stringify(resultData.userId))
+        console.log('userId',resultData.id)
+        localStorage.setItem("loginId", JSON.stringify(resultData.id))
         localStorage.setItem('token', resultData.token);
         this.router.navigateByUrl('/dashboard');
       }
       else {
         alert("Incorrect Email or Password");
-        // console.log("Errror login");
         this.router.navigateByUrl('/Login');
       }
     });

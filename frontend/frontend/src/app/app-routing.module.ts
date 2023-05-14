@@ -7,9 +7,10 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
-import { AuthGuard } from './authGaurd/auth';
+import { AuthGuard } from './auth/auth';
 import { EdituserComponent } from './edituser/edituser.component';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
+import { PasswordResetComponent } from './password-reset/password-reset.component';
 
 const routes: Routes = [
   {
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path: 'editContact',
     component: EditContactComponent,
+  },
+  {
+    path: 'reset',
+    component: PasswordResetComponent,
   }
 ];
 

@@ -40,7 +40,6 @@ export class AdminDashboardComponent implements OnInit {
     this.http.post("http://localhost:4500/user/loginadmin", bodyData).subscribe((resultData: any) => {
       console.log(resultData);
       if (resultData.token) {
-        localStorage.setItem("objectId", JSON.stringify(resultData.userId))
         localStorage.setItem('token', resultData.token);
         this.router.navigateByUrl('/dashboard');
       }

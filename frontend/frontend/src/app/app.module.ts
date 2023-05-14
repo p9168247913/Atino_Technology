@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { AddcontactComponent } from './addcontact/addcontact.component';
 import { EdituserComponent } from './edituser/edituser.component';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
+import { PasswordResetComponent } from './password-reset/password-reset.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,14 @@ import { EditContactComponent } from './edit-contact/edit-contact.component';
     HomeComponent,
     AddcontactComponent,
     EdituserComponent,
-    EditContactComponent
+    EditContactComponent,
+    PasswordResetComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

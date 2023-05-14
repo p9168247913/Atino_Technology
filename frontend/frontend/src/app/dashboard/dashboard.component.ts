@@ -44,6 +44,9 @@ export class DashboardComponent {
     this.router.navigateByUrl('/editContact');
   }
 
+  reset(){
+    this.router.navigateByUrl('/reset');
+    }
 }
 export class AppComponent {
   constructor(private router: Router) {

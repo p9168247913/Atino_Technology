@@ -43,7 +43,7 @@ export class AddcontactComponent {
   saveContact()
   {
     this.addContact();
-    location.reload()
+  
   }
 }
 

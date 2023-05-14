@@ -11,7 +11,10 @@ export class HomeComponent {
   adminLogin() {
     this.router.navigateByUrl('/adminLogin');
   }
-  userLogin(){
+  userLogin() {
     this.router.navigateByUrl('/Login');
   }
+  
+
+
 }

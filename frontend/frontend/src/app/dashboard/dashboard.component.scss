@@ -1,0 +1,16 @@
+.div {
+    display: flex;
+    justify-content: space-around;
+    background-color: teal;
+    border-radius: 5px;
+    height: 5em;
+    align-items: center;
+    width: 100%;
+}
+.button {
+    border: none;
+    height: 40%;
+    border-radius: 3px;
+    justify-content: center;
+    background-color: bisque;
+}
