@@ -3,7 +3,7 @@
 
 ## Backend ##
 
-1. Clone git repositary
+1. Clone git repository
 2. Run command in terminal to install node_modules --->   "npm install"
 3. Create ".env" file inside backend folder.
 4. Add below data into ".env" file :- 
@@ -17,14 +17,17 @@
 
 ## Frontend ##
 
-1. Clone git repositary
+1. Clone git repository
 2. Run command in terminal to install node_modules --->   "npm install"
 3. To run your frontend app on your localhost run command --->  "ng serve"
 4. You will find "http://localhost:4200/" link on your terminal.
 5. Copy and paste in browser.
 
 #Tools to use frontend:-
-* Admin:-
+
+* Admin Login :-   
     email: admin@gmail.com
     password: admin
+    
+    
     
