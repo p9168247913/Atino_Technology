@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -14,9 +14,13 @@ export class RegisterComponent {
   email: string = "";
   password: string = "";
 
-  constructor(private router: Router, private http: HttpClient, private formBuilder: FormBuilder) { }
+  constructor( private router: Router, private http: HttpClient, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void { }
+
+  returnHome() {
+    this.router.navigateByUrl('/adminDashboard')
+  }
 
   register() {
     let bodyData =
@@ -28,8 +32,13 @@ export class RegisterComponent {
     this.http.post("http://localhost:4500/user/register", bodyData).subscribe((resultData: any) => {
       console.log("admin", resultData);
       alert("User Registered Successfully")
-      this.router.navigateByUrl('/adminDashboard');
-    });
+      this.router.navigateByUrl('/adminDashboard')
+    },
+      error => {
+        alert("User Already Registered, Try Login")
+      }
+
+    );
   }
 
   save() {

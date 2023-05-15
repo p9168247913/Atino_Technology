@@ -24,6 +24,10 @@ export class DashboardComponent {
     this.router.navigateByUrl('/addContact');
   }
 
+  home() {
+    this.router.navigateByUrl('');
+  }
+
   userLogout() {
     localStorage.removeItem("token")
     this.router.navigateByUrl('/Login');
@@ -44,9 +48,9 @@ export class DashboardComponent {
     this.router.navigateByUrl('/editContact');
   }
 
-  reset(){
+  reset() {
     this.router.navigateByUrl('/reset');
-    }
+  }
 }
 export class AppComponent {
   constructor(private router: Router) {
