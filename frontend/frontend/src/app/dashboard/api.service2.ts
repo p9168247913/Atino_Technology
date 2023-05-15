@@ -10,7 +10,7 @@ export class ApiService {
 
   token = localStorage.getItem("token") || ''
 
-  apiUrl = `https://attinotechnology.onrender.com/contact`
+  apiUrl = 'http://localhost:4500/contact'
 
   constructor(private http: HttpClient, private router: Router) { }
 

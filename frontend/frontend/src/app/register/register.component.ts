@@ -29,7 +29,7 @@ export class RegisterComponent {
       "email": this.email,
       "password": this.password,
     };
-    this.http.post("https://attinotechnology.onrender.com/user/register", bodyData).subscribe((resultData: any) => {
+    this.http.post("http://localhost:4500/user/register", bodyData).subscribe((resultData: any) => {
       console.log("admin", resultData);
       alert("User Registered Successfully")
       this.router.navigateByUrl('/adminDashboard')

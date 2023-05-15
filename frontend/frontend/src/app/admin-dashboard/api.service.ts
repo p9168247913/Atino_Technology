@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  apiUrl = 'https://attinotechnology.onrender.com/user';
+  apiUrl = 'http://localhost:4500/user';
 
   constructor(private http: HttpClient) { }
 
