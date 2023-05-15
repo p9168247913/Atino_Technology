@@ -31,3 +31,11 @@
     
     
     
+## Deployment ##
+
+** Frontend Deployment on Vercel.com   
+        Link:-https://atino-technology-g90x5tt8j-p9168247913.vercel.app/
+        
+
+** Backend Deployment on Render.com     
+        Link:- https://attinotechnology.onrender.com
