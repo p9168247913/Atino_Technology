@@ -7,7 +7,7 @@
 2. Run command in terminal to install node_modules --->   "npm install"
 3. Create ".env" file inside backend folder.
 4. Add below data into ".env" file :- 
-        db_url = mongodb+srv://pushkaraj123:123@cluster0.lb2avfj.mongodb.net/AtinoApp?retryWrites=true&w=majority
+5.      db_url = mongodb+srv://pushkaraj123:123@cluster0.lb2avfj.mongodb.net/AtinoApp?retryWrites=true&w=majority
         port = 4500
         key = raj
 
