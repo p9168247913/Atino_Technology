@@ -36,7 +36,7 @@
 ** Frontend Deployment on Vercel.com   
         Link:-https://atino-technology-g90x5tt8j-p9168247913.vercel.app/
 
-![image]([image.png](https://drive.google.com/file/d/19od8iVWBY9qI4PmSb5WIQlz5dHr_juLx/view?usp=share_link))
+![image](https://drive.google.com/file/d/19od8iVWBY9qI4PmSb5WIQlz5dHr_juLx/view?usp=share_link)
         
 
 ** Backend Deployment on Render.com     
