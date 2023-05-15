@@ -33,7 +33,7 @@ export class EditContactComponent {
       'Authorization': this.token
     }).set("Content-Type", 'application/json');
 
-    this.http.post(`http://localhost:4500/contact/update/${id}`, bodyData, { headers }).subscribe((resultData: any) => {
+    this.http.post(`https://attinotechnology.onrender.com/contact/update/${id}`, bodyData, { headers }).subscribe((resultData: any) => {
       console.log("admin", resultData);
       alert("User Updated Successfully")
       this.router.navigateByUrl('/dashboard');

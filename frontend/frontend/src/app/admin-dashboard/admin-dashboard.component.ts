@@ -40,7 +40,7 @@ export class AdminDashboardComponent implements OnInit {
       email: email,
     };
 
-    this.http.post("http://localhost:4500/user/loginadmin", bodyData).subscribe((resultData: any) => {
+    this.http.post("https://attinotechnology.onrender.com/user/loginadmin", bodyData).subscribe((resultData: any) => {
       console.log(resultData);
       if (resultData.token) {
         localStorage.setItem('token', resultData.token);

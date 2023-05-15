@@ -30,7 +30,7 @@ export class LoginComponent {
       password: this.password,
     };
 
-    this.http.post("http://localhost:4500/user/login", bodyData).subscribe((resultData: any) => {
+    this.http.post("https://attinotechnology.onrender.com/user/login", bodyData).subscribe((resultData: any) => {
       console.log(resultData);
 
       if (resultData.token) {

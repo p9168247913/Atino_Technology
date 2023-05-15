@@ -32,7 +32,7 @@ export class AddcontactComponent {
       'Authorization': this.token
     }).set("Content-Type", 'application/json')
     
-    this.http.post("http://localhost:4500/contact/add",bodyData, {headers}).subscribe((resultData: any)=>
+    this.http.post("https://attinotechnology.onrender.com/contact/add",bodyData, {headers}).subscribe((resultData: any)=>
     {
       alert("Contact Added Successfully")
       console.log("contact",resultData);
@@ -46,22 +46,3 @@ export class AddcontactComponent {
   
   }
 }
-
-
-
-
-
-// {
-//   newUser : {
-//     name : "",
-//     email : "",
-//     password : "",
-//     contact : [
-//       {
-//         name : "",  
-//         email : "",
-//       }
-//     ]
-  
-//   }
-// }
