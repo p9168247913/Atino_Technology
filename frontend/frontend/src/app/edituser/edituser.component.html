@@ -1,9 +1,9 @@
-<div class="container mt-4">
-    <div class="div">
-        <h1>User Update</h1>
-    </div>
-    <div class="card">
-        <form>
+<body>
+    <div class="container mt-4">
+        <div class="div">
+            <h1>User Update</h1>
+        </div>
+        <form class="form">
             <div class="form-group">
                 <label>Name</label>
                 <input required type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}"
@@ -22,4 +22,4 @@
             <button type="submit" class="btn btn-primary mt-4" (click)="save()">Save</button>
         </form>
     </div>
-</div>
+</body>

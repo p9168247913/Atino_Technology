@@ -1,26 +1,28 @@
-<div class="container">
-  <div class="div">
-    <h1>User Dashboard</h1>
-    <button class="button" (click)="reset()">Reset</button>
-    <button class="button" (click)="addContact()">Add Contact</button>
-    <button class="button" (click)="userLogout()">Logout</button>
+<body>
+  <div class="container">
+    <div class="div">
+      <h1>User Dashboard</h1>
+      <button class="button" (click)="reset()">Reset</button>
+      <button class="button" (click)="addContact()">Add Contact</button>
+      <button class="button" (click)="userLogout()">Logout</button>
+    </div>
+    <table class="table" style="align-items: center; text-align: center;">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of users">
+          <td>{{ data.name }}</td>
+          <td>{{ data.email }}</td>
+          <td>{{ data.number }}</td>
+          <button class="del" (click)="onContactDelete(data._id)">Delete</button>
+          <button class="yel" (click)="onEditContact(data._id)">Update</button>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <table class="table table-striped" style="align-items: center; text-align: center;">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone Number</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let data of users">
-        <td>{{ data.name }}</td>
-        <td>{{ data.email }}</td>
-        <td>{{ data.number }}</td>
-        <button style="background-color: rgb(234, 121, 121);" (click)="onContactDelete(data._id)">Delete</button>
-        <button style="background-color: rgb(237, 237, 191);" (click)="onEditContact(data._id)">Update</button>
-      </tr>
-    </tbody>
-  </table>
-</div>
+</body>

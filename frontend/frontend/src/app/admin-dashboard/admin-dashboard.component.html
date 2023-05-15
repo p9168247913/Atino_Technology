@@ -1,27 +1,28 @@
-<div class="container" style="width: 100%;">
-  <div class="div">
-    <h1>Admin Dashboard</h1>
-    <button class="button" (click)="addUser()">Add User</button>
-    <button class="button" (click)="userLogin()">User Login</button>
+<body>
+  <div class="container" style="width: 100%;">
+    <div class="div">
+      <h1 (click)="home()">Admin Dashboard</h1>
+      <button class="button" (click)="addUser()">Add User</button>
+      <button class="button" (click)="userLogin()">User Login</button>
+    </div>
+    <table class="table table-striped" class="table" >
+      <thead >
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of users">
+          <td>{{ data.name }}</td>
+          <td>{{ data.email }}</td>
+          <td>{{ data.password }}</td>
+          <button class="del"  (click)="onDeleteUser(data._id)">Delete</button>
+          <button class="yel"  (click)="onEditUser(data._id)">Update</button>
+          <button class="gre" (click)="userAdminLogin(data.email)">Login</button>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <table class="table table-striped" style="align-items: center; text-align: center;">
-    <thead >
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Password</th>
-       
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let data of users">
-        <td>{{ data.name }}</td>
-        <td>{{ data.email }}</td>
-        <td>{{ data.password }}</td>
-        <button  style="background-color: rgb(234, 121, 121);" (click)="onDeleteUser(data._id)">Delete</button>
-        <button  style="background-color: rgb(237, 237, 191);" (click)="onEditUser(data._id)">Update</button>
-        <button style="background-color: rgb(193, 234, 193);" (click)="userAdminLogin(data.email)">Login</button>
-      </tr>
-    </tbody>
-  </table>
-</div>
+</body>

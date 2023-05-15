@@ -32,6 +32,9 @@ export class AdminDashboardComponent implements OnInit {
     this.router.navigateByUrl('/Login');
   }
 
+  home(){
+    this.router.navigateByUrl('');
+  }
   userAdminLogin(email: string) {
     let bodyData = {
       email: email,
@@ -50,6 +53,9 @@ export class AdminDashboardComponent implements OnInit {
       }
     });
   }
+
+ 
+
   onDeleteUser(userId: string) {
     this.apiService.deleteUser(userId).subscribe(
       (response: string) => {

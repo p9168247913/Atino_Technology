@@ -19,6 +19,10 @@ export class AdminLoginComponent {
     this.password = "";
   }
 
+  home(){
+    this.router.navigateByUrl("");
+  }
+
   login() {
     if (this.email === "admin@gmail.com" && this.password === "admin") {
       this.router.navigateByUrl('/adminDashboard');
