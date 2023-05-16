@@ -1,86 +1,95 @@
-   .div {
-       display: flex;
-       justify-content: space-around;
-       background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/552/original/abstract-colorful-retro-low-poly-vector-background-with-cool-gradient-futuristic-pattern.jpg);
-       height: 5em;
-       align-items: center;
-       color: rgb(32, 32, 30);
-       width: 90%;
-       margin-top: 0;
-       border-bottom: 2px solid black;
-       margin: auto;
-   }
+.div {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/552/original/abstract-colorful-retro-low-poly-vector-background-with-cool-gradient-futuristic-pattern.jpg);
+    height: 5em;
+    align-items: center;
+    color: rgb(32, 32, 30);
+    width: 90%;
+    margin-top: 0;
+    border-bottom: 2px solid black;
+    margin: auto;
+}
 
-   .div h1 {
-       color: rgb(149, 168, 168);
-   }
+.div h1 {
+    color: rgb(149, 168, 168);
+}
 
-   .button {
-       border: none;
-       border-radius: 10px;
-       color: rgb(29, 27, 27);
-       font-size: 20px;
-       width: 10em;
-       background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/464/original/abstract-colorful-low-poly-vector-background-with-cool-gradient-futuristic-pattern.jpg);
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 8px 30px;
-        cursor: pointer;
+.div h1:hover {
+    transform: scale(1.1);
+}
 
-   }
+.button {
+    border: none;
+    border-radius: 10px;
+    color: rgb(29, 27, 27);
+    font-size: 20px;
+    width: 10em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 30px;
+    cursor: pointer;
+    background-color: hsla(0, 85%, 73%, 0.63);
+}
 
-   .main {
-       background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/552/original/abstract-colorful-retro-low-poly-vector-background-with-cool-gradient-futuristic-pattern.jpg);
-       width: 100%;
-       height: 800px;
-       //    padding-top: 50px;
-       margin: 0;
-   }
+.button:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
 
-   .mid-div {
-       border: 1px solid black;
-       margin: auto;
-       align-items: center;
-       height: 500px;
-       width: 60%;
-       margin-top: 50px;
-       background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/552/original/abstract-colorful-retro-low-poly-vector-background-with-cool-gradient-futuristic-pattern.jpg);
-       box-shadow: 0px 0px 10px 10px;
-       border-radius: 10px;
-       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.main {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/552/original/abstract-colorful-retro-low-poly-vector-background-with-cool-gradient-futuristic-pattern.jpg);
+    width: 100%;
+    height: 800px;
+    //    padding-top: 50px;
+    margin: 0;
+}
 
-   }
+.mid-div {
+    border: 1px solid black;
+    margin: auto;
+    align-items: center;
+    height: 500px;
+    width: 60%;
+    margin-top: 50px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/552/original/abstract-colorful-retro-low-poly-vector-background-with-cool-gradient-futuristic-pattern.jpg);
+    box-shadow: 0px 0px 10px 10px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-   .div2 {
-       width: 90%;
-       height: 90%;
-       margin: auto;
-       align-items: center;
-       margin-top: 20px;
-       padding-top: 30px;
-       //    border: 1px solid black;
-       display: flex;
-       justify-content: space-around;
-   }
+}
 
-   .web {
-       width: 16%;
-       color: rgb(23, 115, 55);
-   }
+.div2 {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    //    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
 
-   .land {
-       width: 80%;
-       color: rgb(16, 119, 126);
-   }
+.web {
+    width: 16%;
+    color: rgb(23, 115, 55);
+}
 
-   .web-div {
-       //    border: 1px solid black;
+.land {
+    width: 80%;
+    color: rgb(16, 119, 126);
+}
+
+.web-div {
+    //    border: 1px solid black;
     //    margin-top: -250px;
     //    margin-left: 40px;
-   }
+}
 
-   .img {
-       width: 350px;
-       height: 350px;
-       margin-top: -30px;
-       border-radius: 5px;
-   }
+.img {
+    width: 350px;
+    height: 350px;
+    margin-top: -30px;
+    border-radius: 5px;
+}

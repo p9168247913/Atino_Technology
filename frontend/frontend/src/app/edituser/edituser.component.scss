@@ -70,3 +70,8 @@ body{
     font-weight: bolder;
     padding: 10px;
 }
+.form button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.1);
+}
