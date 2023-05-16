@@ -20,6 +20,7 @@ body{
     margin-left: -120px;
     margin-top: 9px;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .button {
@@ -33,14 +34,14 @@ body{
 }
 
 .container {
-    width: 50%;
+    width: 42%;
     // border: 1px solid red;
     height: 500px;
     margin-top: 40px;
     box-shadow: 0 0 5px 5px;
     border-radius: 5px;
     background-image: url(https://images.alphacoders.com/102/thumb-1920-1026345.jpg);
-    // padding-top: 2%;
+    padding-top: 2%;
 }
 
 .form{
@@ -54,14 +55,15 @@ body{
 .form label{
     font-size: 20px;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: gray;
 }
 .form input{
     border: 0rem;
     border-bottom: 1px solid black;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-radius: none;
+    padding: 10px;
     outline: none;
     background-image: url(https://getwallpapers.com/wallpaper/full/a/6/9/1156620-hd-gradient-wallpapers-3840x2160-for-mac.jpg);
 
@@ -70,4 +72,7 @@ body{
     background-color: black;
     width: 100%;
     font-weight: bolder;
+    margin-top: 30px;
+    padding: 10px;
+    font-size:large;
 }

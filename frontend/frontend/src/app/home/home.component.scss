@@ -17,15 +17,15 @@
 
    .button {
        border: none;
-       height: 40%;
        border-radius: 10px;
-       justify-content: center;
        color: rgb(29, 27, 27);
        font-size: 20px;
-       width: 8em;
+       width: 10em;
        background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/464/original/abstract-colorful-low-poly-vector-background-with-cool-gradient-futuristic-pattern.jpg);
-       border-bottom: 1px solid black;
        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 8px 30px;
+        cursor: pointer;
+
    }
 
    .main {
@@ -74,8 +74,8 @@
 
    .web-div {
        //    border: 1px solid black;
-       margin-top: -250px;
-       margin-left: 40px;
+    //    margin-top: -250px;
+    //    margin-left: 40px;
    }
 
    .img {

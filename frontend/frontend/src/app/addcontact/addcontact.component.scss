@@ -8,7 +8,6 @@ body{
 .div {
     display: flex;
     justify-content: space-around;
-    // background-color: rgb(214, 214, 207);
     height: 3em;
     width: 60%;
     border-bottom: 1px solid black;
@@ -31,14 +30,14 @@ body{
 }
 
 .container {
-    width: 50%;
+    width: 42%;
     // border: 1px solid red;
-    height: 500px;
+    height: 550px;
     margin-top: 40px;
     box-shadow: 0 0 5px 5px;
     border-radius: 5px;
     background-image: url(https://images.alphacoders.com/102/thumb-1920-1026345.jpg);
-    // padding-top: 2%;
+    padding: 2%;
 }
 
 .form{
@@ -62,10 +61,11 @@ body{
     border-radius: none;
     outline: none;
     background-image: url(https://getwallpapers.com/wallpaper/full/a/6/9/1156620-hd-gradient-wallpapers-3840x2160-for-mac.jpg);
-
+    padding: 10px;
 }
 .form button{
     background-color: black;
     width: 100%;
     font-weight: bolder;
+    padding: 10px;
 }

@@ -23,7 +23,7 @@ body {
 
 .button {
     border: none;
-    height: 40%;
+    // height: 40%;
     border-radius: 10px;
     justify-content: center;
     color: rgb(29, 27, 27);
@@ -33,6 +33,7 @@ body {
     border-bottom: 1px solid black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: wheat;
+    padding: 10px 15px;
 }
 
 .table {
@@ -42,30 +43,43 @@ body {
     border: 1px solid black;
 }
 
-td{
+td {
     border: 1px solid black;
-    color: antiquewhite;
-
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
 
-th{
+.action {
+    display: flex;
+    gap: 5px;
+    height: 4em;
+}
+
+
+th {
     background-image: url(https://th.bing.com/th/id/R.4b11736a517898a9d6a4459d75f01880?rik=4ky42GozEdn6BA&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f85%2f9%2fNCjHgX.jpg&ehk=nxjXaEYb2z3d3M00Kefp3Nikci0US3jGv5ty7wR5f5k%3d&risl=&pid=ImgRaw&r=0);
-color: antiquewhite;
+    color: antiquewhite;
 }
 
-.del{
+.del {
     background-image: url(https://th.bing.com/th/id/OIP.tMFmTAeh2Zo21jCpxFm3xwHaEK?w=275&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
-   
+    cursor: pointer;
     width: 4em;
+    border-radius: 5px;
+
 }
 
-.yel{
+.yel {
     background-image: url(https://th.bing.com/th/id/OIP.KUltRRXqsC4CkQwwyF5KAQHaKi?w=121&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
     width: 5em;
-   
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.gre{
+.gre {
     background-image: url(https://th.bing.com/th/id/OIP.flMK0L1zjeBMBbJHlErTZgFNC7?w=314&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
     width: 4em;
+    cursor: pointer;
+    border-radius: 5px;
+
 }

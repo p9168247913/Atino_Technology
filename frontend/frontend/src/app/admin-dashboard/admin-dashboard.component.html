@@ -19,7 +19,7 @@
           <td>{{ data.name }}</td>
           <td>{{ data.email }}</td>
           <td>{{ data.password }}</td>
-          <td>
+          <td class="action">
             <button class="del" (click)="onDeleteUser(data._id)">Delete</button>
             <button class="yel" (click)="onEditUser(data._id)">Update</button>
             <button class="gre" (click)="userAdminLogin(data.email)">Login</button>
